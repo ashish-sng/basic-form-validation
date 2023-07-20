@@ -199,9 +199,9 @@ hr {
 
 @media screen and (max-width: 600px) and (min-width: 100px) {
   .form__container {
-    height: 92vh;
+    height: 98vh;
     width: 90vw;
-    margin-top: 8vh;
+    margin-top: 2vh;
   }
   .form__container__logo > img {
     height: 10vh;
