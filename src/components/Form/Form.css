@@ -8,61 +8,6 @@
   overflow-y: hidden;
 }
 
-.select,
-option {
-  border: none;
-  outline: none;
-}
-
-.language__container{
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-  margin-bottom: 1vh;
-}
-
-.language__select {
-  display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-  align-items: center;
-  border: 1px solid #ccc;
-  border-radius: 5rem;
-  padding: 0.5vh 1.2vw;
-  width: 8rem;
-  margin-right: 2vw;
-}
-
-.language__select > i {
-  font-size: 1rem;
-  margin-right: 8px;
-  color: #808089;
-}
-
-.language__select > i:nth-child(2) {
-  font-size: 1.2rem;
-  transform: translate(-50%);
-}
-
-.language__select > select {
-  appearance: none;
-  border: none;
-  background-color: transparent;
-  font-size: 0.9rem;
-  color: #808089;
-  cursor: pointer;
-}
-.language__select select:hover,
-.language__select select:focus {
-  outline: none;
-  border-color: #007bff;
-}
-
-option {
-  font-size: 0.9rem;
-  color: #808089;
-}
-
 .form__container__logo > img {
   height: 20vh;
   width: 30vw;
@@ -93,7 +38,7 @@ option {
   width: 90%;
   height: 6vh;
   border-radius: 0.5rem;
-  border: 1px solid #C4C4CF;
+  border: 1px solid #c4c4cf;
   padding-left: 1rem;
   margin-bottom: 2vh;
   font-size: 0.9rem;
@@ -113,7 +58,7 @@ option {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #003CC1;
+  color: #003cc1;
   font-weight: 500;
 }
 
@@ -128,7 +73,7 @@ button {
 
 hr {
   width: 92%;
-  color: #EBEBF0;
+  color: #ebebf0;
 }
 
 .form__buttons {
@@ -151,14 +96,14 @@ hr {
 }
 
 .form__buttons > button:first-child {
-  background-color: #003CC1;
+  background-color: #003cc1;
   color: white;
   border: none;
 }
 
 .form__buttons > button:nth-child(2) {
-  color: #003CC1;
-  border: 2px solid #C4C4CF;
+  color: #003cc1;
+  border: 2px solid #c4c4cf;
 }
 
 .form__buttons > button:nth-child(3) {
@@ -166,7 +111,7 @@ hr {
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  border: 2px solid #C4C4CF;
+  border: 2px solid #c4c4cf;
 }
 
 .form__buttons > button:nth-child(3) > img {
@@ -195,7 +140,7 @@ hr {
 
 .form__container__form__signup > button {
   border: none;
-  color: #003CC1;
+  color: #003cc1;
   font-weight: 600;
   background: transparent;
   font-size: 0.9rem;
@@ -211,10 +156,10 @@ hr {
   }
 
   .language__select {
-  padding: 0.5vh 2vw;
-  width: 8rem;
-  margin-right: 2vw;
-}
+    padding: 0.5vh 2vw;
+    width: 8rem;
+    margin-right: 2vw;
+  }
   .form__container__logo > img {
     height: 15vh;
     width: 70vw;

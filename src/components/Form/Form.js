@@ -4,6 +4,7 @@ import formLogo from "../../images/formLogo.png";
 import microsoft from "../../images/microsoftLogo.png";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import LanguageDropdown from "./LanguageSelect/LanguageSelect";
 
 const Form = () => {
   const [emailOrPhone, setEmailOrPhone] = useState("");
@@ -11,11 +12,6 @@ const Form = () => {
   const [emailError, setEmailError] = useState("");
   const [passwordError, setPasswordError] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
-  const [selectedLanguage, setSelectedLanguage] = useState("Languages");
-
-  const handleLanguageChange = (e) => {
-    setSelectedLanguage(e.target.value);
-  };
 
   const handleNewFeature = (e) => {
     e.preventDefault();
@@ -76,17 +72,7 @@ const Form = () => {
 
   return (
     <div className="form__container">
-      <div className="language__container">
-        <div className="language__select">
-          <i className="fa fa-globe"></i>
-          <select value={selectedLanguage} onChange={handleLanguageChange}>
-            <option value="en">English</option>
-            <option value="fr">French</option>
-            <option value="es">Spanish</option>
-          </select>
-          <i className="fa fa-chevron-down"></i>
-        </div>
-      </div>
+      <LanguageDropdown />
       <div className="form__container__logo">
         <img src={formLogo} alt="logo" />
       </div>
