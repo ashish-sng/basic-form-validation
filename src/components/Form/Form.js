@@ -10,6 +10,15 @@ const Form = () => {
   const [password, setPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
 
+  const handleNewFeature = (e) => {
+    e.preventDefault();
+    toast.info("This feature is not available yet.", {
+      position: toast.POSITION.TOP_CENTER,
+      autoClose: 3000,
+      draggable: true,
+    });
+  };
+
   const handleSignIn = (e) => {
     e.preventDefault();
     // Basic email/phone and password validation
@@ -59,7 +68,9 @@ const Form = () => {
       </div>
       <hr />
       <form className="form__container__form">
-        <label htmlFor="emailOrPhone">Your Email/Phone<span>*</span></label>
+        <label htmlFor="emailOrPhone">
+          Your Email/Phone<span>*</span>
+        </label>
         <input
           type="text"
           name="emailOrPhone"
@@ -80,17 +91,17 @@ const Form = () => {
         />
         {errorMessage && <p className="error-message">{errorMessage}</p>}
         <div className="form__container__form__tc">
-          <span>
-            By continuing you agree to ours terms and conditions.
-          </span>
-          <span>Forgot password ?</span>
+          <span>By continuing you agree to ours terms and conditions.</span>
+          <span onClick={handleNewFeature}>Forgot password ?</span>
         </div>
         <div className="form__buttons">
           <button className="signin__button" onClick={handleSignIn}>
             Sign In
           </button>
-          <button className="signin__button">Sign in with OTP</button>
-          <button className="signin__button">
+          <button className="signin__button" onClick={handleNewFeature}>
+            Sign in with OTP
+          </button>
+          <button className="signin__button" onClick={handleNewFeature}>
             <img src={microsoft} alt="" /> <span>Login with Microsoft</span>
           </button>
           <span>We will send you an OTP on your provided contact.</span>
@@ -98,7 +109,7 @@ const Form = () => {
         <hr />
         <div className="form__container__form__signup">
           <span>Don't have an account?</span>
-          <button>Sign up</button>
+          <button onClick={handleNewFeature}>Sign up</button>
         </div>
         <ToastContainer />
       </form>
