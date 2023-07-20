@@ -1,8 +1,18 @@
-.title__logo{
-    margin-left: 10vw;
+.title__logo {
+  margin-left: 10vw;
 }
 
 .title__logo > img {
+  height: 15vh;
+  aspect-ratio: 5/1.6;
+}
+
+@media all and (max-width: 600px) {
+  .title__logo {
+    margin-left: 10%;
+  }
+  .title__logo > img {
     height: 15vh;
-    aspect-ratio: 5/1.6;
+    aspect-ratio: 5/2;
+  }
 }
