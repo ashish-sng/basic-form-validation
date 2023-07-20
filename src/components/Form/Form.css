@@ -27,16 +27,14 @@
   margin-right: 2vw;
 }
 
-.language__select > i:first-child {
-  font-size: 1.2rem;
+.language__select > i {
+  font-size: 1rem;
   margin-right: 8px;
   color: #808089;
 }
 
-.language__select > i:nth-child(2) {
-  font-size: 1rem;
-  margin-right: 8px;
-  color: #808089;
+.language__select > i:nth-child(1) {
+  font-size: 1.2rem;
 }
 
 .language__select select {
@@ -61,7 +59,6 @@ option {
 .form__container__logo > img {
   height: 15vh;
   width: 20vw;
-  /* aspect-ratio: 5/2; */
   object-fit: contain;
 }
 
@@ -197,12 +194,20 @@ hr {
   font-size: 0.9rem;
 }
 
+/* media queries */
+
 @media screen and (max-width: 600px) and (min-width: 100px) {
   .form__container {
     height: 98vh;
     width: 90vw;
     margin-top: 2vh;
   }
+
+  .language__select {
+  padding: 0.5vh 2vw;
+  width: 8rem;
+  margin-right: 2vw;
+}
   .form__container__logo > img {
     height: 10vh;
     width: 60vw;
