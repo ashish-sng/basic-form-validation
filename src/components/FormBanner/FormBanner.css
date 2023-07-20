@@ -1,6 +1,6 @@
 .form__banner {
   height: 100vh;
-  width: 65vw;
+  width: 60vw;
   background-image: url("../../images/backgroundImg.png");
   background-position: center;
   background-size: cover;
@@ -19,7 +19,6 @@
   color: white;
   text-align: center;
   margin: 15% 0;
-  /* margin-top: 10vh; */
 }
 .bounce {
   -moz-animation: bounce 2s infinite;

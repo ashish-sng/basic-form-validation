@@ -1,5 +1,5 @@
 .form__container {
-  width: 35vw;
+  width: 40vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,11 +23,11 @@
 }
 
 .form__container__form > label {
-  font-size: x-small;
+  font-size: 0.9rem;
   font-weight: 600;
   margin-bottom: 1vh;
   align-self: self-start;
-  margin-left: 1vw;
+  margin-left: 1.5vw;
 }
 
 .form__container__form > label > span {
@@ -38,18 +38,19 @@
   width: 90%;
   height: 6vh;
   border-radius: 0.5rem;
-  border: 1px solid black;
+  border: 1px solid #C4C4CF;
   padding-left: 1rem;
   margin-bottom: 2vh;
+  font-size: 0.9rem;
 }
 
 .form__container__form > p {
-  font-size: x-small;
+  font-size: 0.9rem;
   color: red;
   align-self: self-start;
   margin-left: 1.4vw;
   margin-top: -1vh;
-  margin-bottom: 0;
+  margin-bottom: 1vh;
 }
 
 .form__container__form__tc {
@@ -57,12 +58,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: blue;
+  color: #003CC1;
   font-weight: 500;
 }
 
 .form__container__form__tc > span {
-  font-size: 1px;
+  font-size: 0.9rem;
 }
 
 button {
@@ -72,6 +73,7 @@ button {
 hr {
   margin: 2vh 0 1vh 0;
   width: 95%;
+  color: #C4C4CF;
 }
 
 .form__buttons {
@@ -86,22 +88,22 @@ hr {
 
 .form__buttons > button {
   width: 93%;
-  height: 5vh;
+  height: 6vh;
   border-radius: 0.5rem;
   background: transparent;
-  font-size: small;
+  font-size: 0.9rem;
   font-weight: 600;
 }
 
 .form__buttons > button:first-child {
-  background-color: blue;
+  background-color: #003CC1;
   color: white;
   border: none;
 }
 
 .form__buttons > button:nth-child(2) {
-  color: blue;
-  border: 2px solid grey;
+  color: #003CC1;
+  border: 2px solid #C4C4CF;
 }
 
 .form__buttons > button:nth-child(3) {
@@ -109,18 +111,18 @@ hr {
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  border: 2px solid grey;
+  border: 2px solid #C4C4CF;
 }
 
 .form__buttons > button:nth-child(3) > img {
-  height: 5vh;
+  height: 4vh;
   aspect-ratio: 1/1;
   object-fit: contain;
 }
 
 .form__buttons > span {
   display: flex;
-  font-size: 1px;
+  font-size: 0.9rem;
   color: grey;
 }
 
@@ -132,15 +134,16 @@ hr {
 }
 
 .form__container__form__signup > span {
-  font-size: x-small;
+  font-size: 0.9rem;
   color: grey;
 }
 
 .form__container__form__signup > button {
   border: none;
-  color: blue;
+  color: #003CC1;
   font-weight: 600;
   background: transparent;
+  font-size: 0.9rem;
 }
 
 @media screen and (max-width: 600px) and (min-width: 100px) {
@@ -164,7 +167,7 @@ hr {
     width: 94%;
   }
   .form__container__form__tc > span {
-    font-size: 0.5rem;
+    font-size: 1rem;
   }
   .form__buttons > button {
     width: 96%;
