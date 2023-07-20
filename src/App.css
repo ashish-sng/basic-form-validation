@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  display: flex;
 }
 
 .App-logo {
@@ -10,6 +10,15 @@
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@media all and (max-width: 600px) and (min-width: 100px) {
+  .App {
+    flex-direction: column;
+    overflow-y: scroll;
+    justify-content: center;
+    align-items: center;
   }
 }
 
