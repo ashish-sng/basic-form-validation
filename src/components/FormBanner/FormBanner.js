@@ -18,7 +18,7 @@ const FormBanner = () => {
       <TitleLogo />
       {displayArrow && (
         <div className="arrow bounce">
-          <span class="fa fa-arrow-up fa-2x" href="#"></span>
+          <span className="fa fa-arrow-up fa-2x" href="#"></span>
         </div>
       )}
     </div>

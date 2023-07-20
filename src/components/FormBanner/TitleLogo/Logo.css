@@ -8,11 +8,8 @@
 }
 
 @media all and (max-width: 600px) {
-  .title__logo {
-    margin-left: 10%;
-  }
   .title__logo > img {
-    height: 10vh;
-    aspect-ratio: 5/2;
+    height: 15vh;
+    width: 70vw;
   }
 }

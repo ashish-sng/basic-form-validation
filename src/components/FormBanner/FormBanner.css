@@ -41,5 +41,7 @@
 @media all and (max-width: 600px) and (min-width: 100px) {
   .form__banner {
     width: 100vw;
+    justify-content: center;
+    align-items: center;
   }
 }

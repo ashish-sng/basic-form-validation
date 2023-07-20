@@ -192,6 +192,18 @@ const Form = () => {
 
   return (
     <div className="form__container">
+      <div className="language__container">
+        <div className="language__select">
+          <i className="fa fa-globe"></i>
+          <select>
+            <option default>Languages</option>
+            <option value="en">English</option>
+            <option value="fr">French</option>
+            <option value="es">Spanish</option>
+          </select>
+          <i className="fa fa-chevron-down"></i>
+        </div>
+      </div>
       <div className="form__container__logo">
         <img src={formLogo} alt="logo" />
       </div>
